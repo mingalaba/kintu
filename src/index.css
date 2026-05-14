@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #050505;
+  --color-optical: #FAFAFA;
+  --color-lab: #6B6B6B;
+  --color-grid: #1A1A1A;
+  --color-volt: #E5E5E5;
+  
+  --font-geist: "Geist", "Inter", sans-serif;
+  --font-mono: "Geist Mono", "Space Mono", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-void text-optical font-geist antialiased selection:bg-optical selection:text-void;
+  }
+}
+
+@layer utilities {
+  .tech-grid {
+    background-image: 
+      linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+  }
+}
