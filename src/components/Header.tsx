@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -8,7 +7,7 @@ const Header = () => {
     <motion.header 
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: "easeOut" as any }}
       className="w-full max-w-7xl mx-auto border-b border-grid px-6 py-4 flex justify-between items-center bg-void/80 backdrop-blur-xl sticky top-0 z-50"
     >
       <div className="flex items-center gap-8">
