@@ -22,12 +22,13 @@ const Header = () => {
           <Link to="/servicios" className="hover:text-optical transition-colors">Servicios</Link>
           <Link to="/laboratorio" className="hover:text-optical transition-colors">Laboratorio</Link>
           <Link to="/nosotros" className="hover:text-optical transition-colors">Nosotros</Link>
+          <Link to="/contacto" className="hover:text-optical transition-colors">Contacto</Link>
         </nav>
       </div>
-      <button className="border border-grid hover:border-optical/50 hover:bg-optical/5 transition-all duration-300 px-5 py-2.5 font-mono text-xs uppercase tracking-widest flex items-center gap-3 group">
+      <Link to="/future-audit" className="border border-grid hover:border-optical/50 hover:bg-optical/5 transition-all duration-300 px-5 py-2.5 font-mono text-xs uppercase tracking-widest flex items-center gap-3 group">
         FUTURE_AUDIT 
         <ArrowRight size={14} className="text-lab group-hover:text-optical group-hover:translate-x-1 transition-all" />
-      </button>
+      </Link>
     </motion.header>
   );
 };

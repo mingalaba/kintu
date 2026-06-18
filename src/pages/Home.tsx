@@ -1,5 +1,6 @@
 import { Terminal, Crosshair, Box, Layers, Plus, Check, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -44,10 +45,10 @@ const Home = () => {
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto items-center">
-            <button className="bg-optical text-void px-8 py-5 font-mono uppercase text-xs tracking-[0.2em] hover:bg-volt hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-4 group w-full sm:w-auto shadow-[0_0_40px_rgba(250,250,250,0.1)] hover:shadow-[0_0_60px_rgba(250,250,250,0.2)]">
+            <Link to="/future-audit" className="bg-optical text-void px-8 py-5 font-mono uppercase text-xs tracking-[0.2em] hover:bg-volt hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-4 group w-full sm:w-auto shadow-[0_0_40px_rgba(250,250,250,0.1)] hover:shadow-[0_0_60px_rgba(250,250,250,0.2)]">
               INICIAR_FUTURE_AUDIT 
               <Terminal size={16} className="group-hover:rotate-12 transition-transform" />
-            </button>
+            </Link>
             <div className="flex items-center gap-4 text-lab font-mono text-[10px] border border-grid px-6 py-4 tracking-widest uppercase bg-void/50 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 bg-optical rounded-full animate-ping"></span>
               <div>Diagnóstico clínico.<br/>45 min. Sin fricción.</div>

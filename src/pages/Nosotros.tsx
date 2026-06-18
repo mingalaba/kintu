@@ -1,5 +1,6 @@
 import { Plus, ArrowRight, Compass, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -38,10 +39,10 @@ const Nosotros = () => {
           </motion.h1>
           
           <motion.p variants={fadeUp} className="text-xl md:text-2xl text-lab max-w-3xl mb-16 font-light leading-snug">
-            Nacimos porque el mercado está saturado de consultoras que dejan PDFs teóricos y agencias que venden bots sin contexto de negocio. Nosotros instalamos autonomía.
+            Nacimos de una profunda convicción: la tecnología debe liberar el potencial de tu equipo, no complicar su día a día. Más que entregar teoría o herramientas aisladas, nos dedicamos a instalar verdadera autonomía operativa en tu organización.
           </motion.p>
 
-          <motion.button variants={fadeUp} className="border border-optical text-optical px-8 py-4 font-mono uppercase text-xs tracking-[0.2em] hover:bg-optical hover:text-void transition-all duration-300 flex items-center gap-4">
+          <motion.button variants={fadeUp} onClick={() => document.getElementById('manifiesto')?.scrollIntoView({ behavior: 'smooth' })} className="border border-optical text-optical px-8 py-4 font-mono uppercase text-xs tracking-[0.2em] hover:bg-optical hover:text-void transition-all duration-300 flex items-center gap-4">
             LEER_EL_MANIFIESTO <ArrowRight size={16} />
           </motion.button>
         </motion.div>
@@ -58,24 +59,24 @@ const Nosotros = () => {
         >
           <motion.div variants={fadeUp} className="flex flex-col gap-6">
             <Compass size={32} className="text-optical mb-4" />
-            <h2 className="text-3xl font-medium tracking-tight">Construido desde el dolor<br/>de la operación real.</h2>
+            <h2 className="text-3xl font-medium tracking-tight">Construido desde la<br/>experiencia operativa.</h2>
             <p className="text-lab font-light leading-relaxed">
-              Kintu no es teoría académica ni management de escritorio. Es el resultado de años operando y escalando equipos, viendo de primera mano cómo fundadores brillantes se convierten en prisioneros de sus propias empresas por no tener los sistemas arquitectónicos correctos instalados.
+              Sabemos lo que se siente estar al frente. Kintu es el resultado de años operando y escalando equipos, entendiendo de primera mano la frustración de ver a líderes brillantes atrapados en el día a día operativo por la falta de una arquitectura de sistemas adecuada.
             </p>
           </motion.div>
           
           <motion.div variants={fadeUp} className="flex flex-col gap-6">
             <ShieldCheck size={32} className="text-optical mb-4" />
-            <h2 className="text-3xl font-medium tracking-tight">Cerebro y Músculo.<br/>Diseñamos y Ejecutamos.</h2>
+            <h2 className="text-3xl font-medium tracking-tight">Estrategia y Ejecución.<br/>Diseño y Adopción.</h2>
             <p className="text-lab font-light leading-relaxed">
-              Funcionamos como un Hub descentralizado de evolución. Diseñamos el blueprint estratégico y ejecutamos la solución llave en mano desplegando squads de ingenieros y consultores de nuestra red de expertos asociados. Nos diferenciamos del staff augmentation tradicional porque asumimos la dirección y gobernanza de la entrega, asegurando tanto la calidad técnica como la adopción humana.
+              Actuamos como tus socios estratégicos en infraestructura tecnológica. Diseñamos el camino y ejecutamos la solución integral, acompañándote con una red de ingenieros y consultores de primer nivel. Nuestro compromiso va más allá de la entrega técnica: guiamos la adopción humana para asegurar que tu equipo abrace el cambio.
             </p>
           </motion.div>
         </motion.div>
       </section>
 
       {/* MANIFIESTO HIGHLIGHT */}
-      <section className="w-full max-w-7xl mx-auto px-6 py-32 border-x border-t border-b border-grid relative">
+      <section id="manifiesto" className="w-full max-w-7xl mx-auto px-6 py-32 border-x border-t border-b border-grid relative">
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -90,21 +91,23 @@ const Nosotros = () => {
           <motion.ul variants={fadeUp} className="text-2xl md:text-4xl font-medium tracking-tight text-optical space-y-8 mb-16 text-left w-full">
             <li className="flex gap-6 items-start">
               <span className="text-grid select-none">01</span>
-              <span>Automatizar lo predecible para humanizar lo excepcional.</span>
+              <span>Automatizar lo repetitivo para liberar el talento creativo.</span>
             </li>
             <li className="flex gap-6 items-start">
               <span className="text-grid select-none">02</span>
-              <span>Los procesos protegen la creatividad, no la limitan.</span>
+              <span>Sistemas sólidos que protegen la innovación y garantizan escalabilidad.</span>
             </li>
             <li className="flex gap-6 items-start">
               <span className="text-grid select-none">03</span>
-              <span>Competimos por autonomía, no por facturar horas hombre.</span>
+              <span>Medimos nuestro éxito por la autonomía que logras, no por las horas facturadas.</span>
             </li>
           </motion.ul>
 
-          <motion.button variants={fadeUp} className="bg-optical text-void px-10 py-5 font-mono uppercase text-xs tracking-[0.2em] hover:bg-volt transition-all duration-300">
-            ¿COMPARTES ESTA VISIÓN? AGENDAR AUDIT
-          </motion.button>
+          <motion.div variants={fadeUp}>
+            <Link to="/future-audit" className="bg-optical text-void px-10 py-5 font-mono uppercase text-xs tracking-[0.2em] hover:bg-volt transition-all duration-300 inline-block">
+              ¿COMPARTES ESTA VISIÓN? AGENDAR AUDIT
+            </Link>
+          </motion.div>
         </motion.div>
       </section>
     </>

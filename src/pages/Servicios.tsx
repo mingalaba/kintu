@@ -1,5 +1,6 @@
 import { Plus, FileText, Zap, Users, Shield } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -58,28 +59,32 @@ const Servicios = () => {
               level: "Nivel 01 / ENTRY", 
               title: "Future Audit", 
               desc: "El diagnóstico clínico. 45 minutos para radiografiar tu organización y exponer dónde pierdes tiempo y liquidez. Sales con un blueprint accionable.",
-              action: "Agendar sesión sin costo →"
+              action: "Agendar sesión sin costo →",
+              link: "/future-audit"
             },
             { 
               icon: <Zap className="text-optical mb-6" size={24}/>,
               level: "Nivel 02 / CORE", 
               title: "Sprints de Evolución", 
               desc: "Intervenciones quirúrgicas de 90 días. Instalamos una capa táctica de tu OS (ej. automatización comercial o rediseño de roles) y medimos el ROI inmediato.",
-              action: "Ver metodología del Sprint →"
+              action: "Ver metodología del Sprint →",
+              link: "/sprints-evolucion"
             },
             { 
               icon: <Shield className="text-optical mb-6" size={24}/>,
               level: "Nivel 03 / GROWTH", 
               title: "Partner de Evolución", 
               desc: "Para corporaciones con operaciones complejas. Nos convertimos en tu socio de evolución tecnológica y organizativa. Proveemos squads de ingenieros y especialistas a demanda para la ejecución llave en mano de proyectos complejos: modernización de sistemas legacy, integración y unificación de ERPs multiregionales y consolidación de bases de datos, gestionando la adopción humana de inicio a fin.",
-              action: "Aplicar para Partnership →"
+              action: "Aplicar para Partnership →",
+              link: "/partner-evolucion"
             },
             { 
               icon: <Users className="text-optical mb-6" size={24}/>,
               level: "Nivel 04 / PREMIUM", 
               title: "Experiencias", 
               desc: "Espacios inmersivos. Retiros y laboratorios presenciales para hackear la mentalidad operativa del CEO y conectarlo con pares en la misma frecuencia.",
-              action: "Explorar próximos Labs →"
+              action: "Explorar próximos Labs →",
+              link: "/laboratorio"
             }
           ].map((service, idx) => (
             <motion.div key={idx} variants={fadeUp} className="bg-void p-12 flex flex-col group hover:bg-grid/10 transition-colors duration-500">
@@ -87,9 +92,9 @@ const Servicios = () => {
               <div className="font-mono text-[10px] text-lab uppercase tracking-widest mb-4">{service.level}</div>
               <h3 className="text-3xl font-medium tracking-tight mb-6 text-optical">{service.title}</h3>
               <p className="text-lab leading-relaxed font-light mb-12 flex-grow">{service.desc}</p>
-              <button className="self-start font-mono text-xs uppercase tracking-widest text-optical hover:text-white flex items-center gap-2 group-hover:translate-x-2 transition-all">
+              <Link to={service.link} className="self-start font-mono text-xs uppercase tracking-widest text-optical hover:text-white flex items-center gap-2 group-hover:translate-x-2 transition-all cursor-pointer">
                 {service.action}
-              </button>
+              </Link>
             </motion.div>
           ))}
         </motion.div>

@@ -1,5 +1,6 @@
-import { ArrowUpRight, Plus } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -38,18 +39,17 @@ const Footer = () => {
           Descubre exactamente dónde está el nudo que ahoga tus márgenes. 45 minutos para auditar tu infraestructura actual y trazar la ruta de escape hacia el New Way of Work.
         </motion.p>
         
-        <motion.button variants={fadeUp} className="bg-optical text-void px-12 py-6 font-mono uppercase text-sm tracking-[0.2em] hover:bg-volt hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-4 group shadow-[0_0_40px_rgba(250,250,250,0.1)] hover:shadow-[0_0_60px_rgba(250,250,250,0.2)]">
-          AGENDAR_FUTURE_AUDIT 
-          <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-        </motion.button>
+        <motion.div variants={fadeUp}>
+          <Link to="/future-audit" className="bg-optical text-void px-12 py-6 font-mono uppercase text-sm tracking-[0.2em] hover:bg-volt hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-4 group shadow-[0_0_40px_rgba(250,250,250,0.1)] hover:shadow-[0_0_60px_rgba(250,250,250,0.2)]">
+            AGENDAR_FUTURE_AUDIT
+          </Link>
+        </motion.div>
       </motion.div>
       
       <div className="mt-40 w-full flex flex-col md:flex-row justify-between items-center border-t border-grid pt-10 font-mono text-[10px] tracking-widest uppercase text-lab relative z-10">
         <div>[KINTU_LABS] © 2026</div>
         <div className="flex gap-8 mt-6 md:mt-0">
-          <a href="#" className="hover:text-optical transition-colors">Privacidad</a>
-          <a href="#" className="hover:text-optical transition-colors">Términos</a>
-          <a href="#" className="hover:text-optical transition-colors">LinkedIn</a>
+          <a href="https://www.linkedin.com/company/kintu-lab" target="_blank" rel="noopener noreferrer" className="hover:text-optical transition-colors">LinkedIn</a>
         </div>
       </div>
     </footer>

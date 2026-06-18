@@ -1,5 +1,6 @@
 import { Terminal, Plus, Activity, GitBranch, Cpu, Network } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -152,9 +153,11 @@ const SistemaOperativo = () => {
           <motion.p variants={fadeUp} className="text-lg text-lab font-light leading-relaxed mb-12">
             El error más común es automatizar el desorden. En 45 minutos, mapeamos tu operación y te decimos exactamente dónde está tu cuello de botella real.
           </motion.p>
-          <motion.button variants={fadeUp} className="bg-void border border-optical text-optical px-10 py-5 font-mono uppercase text-xs tracking-[0.2em] hover:bg-optical hover:text-void transition-all duration-300">
-            INICIAR_FUTURE_AUDIT
-          </motion.button>
+          <motion.div variants={fadeUp}>
+            <Link to="/future-audit" className="bg-void border border-optical text-optical px-10 py-5 font-mono uppercase text-xs tracking-[0.2em] hover:bg-optical hover:text-void transition-all duration-300 inline-block">
+              INICIAR_FUTURE_AUDIT
+            </Link>
+          </motion.div>
         </motion.div>
       </section>
     </>
