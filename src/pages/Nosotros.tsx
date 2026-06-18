@@ -66,9 +66,9 @@ const Nosotros = () => {
           
           <motion.div variants={fadeUp} className="flex flex-col gap-6">
             <ShieldCheck size={32} className="text-optical mb-4" />
-            <h2 className="text-3xl font-medium tracking-tight">Dirigimos la construcción.<br/>No pegamos los ladrillos.</h2>
+            <h2 className="text-3xl font-medium tracking-tight">Cerebro y Músculo.<br/>Diseñamos y Ejecutamos.</h2>
             <p className="text-lab font-light leading-relaxed">
-              En Kintu asumimos el rol del Arquitecto. Diseñamos el blueprint de tu organización y luego orquestamos a un ecosistema de expertos para implementarlo. Esto garantiza que cada pieza de código y cada herramienta sirva al modelo de negocio, y no al revés.
+              Funcionamos como un Hub descentralizado de evolución. Diseñamos el blueprint estratégico y ejecutamos la solución llave en mano desplegando squads de ingenieros y consultores de nuestra red de expertos asociados. Nos diferenciamos del staff augmentation tradicional porque asumimos la dirección y gobernanza de la entrega, asegurando tanto la calidad técnica como la adopción humana.
             </p>
           </motion.div>
         </motion.div>

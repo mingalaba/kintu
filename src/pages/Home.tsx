@@ -40,7 +40,7 @@ const Home = () => {
           </motion.h1>
           
           <motion.p variants={fadeUp} className="text-xl md:text-2xl text-lab max-w-3xl mb-16 font-light leading-snug">
-            Reemplazamos el caos corporativo con infraestructura táctica. Instalamos el Sistema Operativo para que tu equipo opere con autonomía real y recuperes tu tiempo estratégico.
+            Reemplazamos el caos corporativo con infraestructura táctica. Instalamos el Sistema Operativo para que tu empresa opere con autonomía real y recuperes tu tiempo estratégico.
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto items-center">
@@ -87,8 +87,8 @@ const Home = () => {
               <Crosshair className="text-lab group-hover:text-optical transition-colors duration-500" size={24} />
             </div>
             <div>
-              <h3 className="font-mono text-xs text-optical mb-5 uppercase tracking-[0.2em]">El Fundador Rehén</h3>
-              <p className="text-lab text-sm leading-relaxed font-light">Eres el cuello de botella. Cada decisión clave pasa por ti. Un fin de semana desconectado equivale a una semana de incendios.</p>
+              <h3 className="font-mono text-xs text-optical mb-5 uppercase tracking-[0.2em]">El Líder Bottleneck</h3>
+              <p className="text-lab text-sm leading-relaxed font-light">Eres el cuello de botella. Cada decisión clave pasa por ti o por un puñado de managers. Un fin de semana desconectado o una ausencia clave equivale a una semana de incendios.</p>
             </div>
           </motion.div>
           {/* Card 2 */}
@@ -98,7 +98,7 @@ const Home = () => {
             </div>
             <div>
               <h3 className="font-mono text-xs text-optical mb-5 uppercase tracking-[0.2em]">Falsa Tecnología</h3>
-              <p className="text-lab text-sm leading-relaxed font-light">Pagan 5 licencias de software distintas (CRM, Slack, Asana), pero el equipo sigue coordinando todo por WhatsApp.</p>
+              <p className="text-lab text-sm leading-relaxed font-light">Inversión en licencias de ERP, CRM o gestores de proyectos (Slack, Asana) que los equipos terminan rechazando o subutilizando, volviendo a coordinar la operación diaria por WhatsApp y planillas aisladas.</p>
             </div>
           </motion.div>
           {/* Card 3 */}
@@ -108,7 +108,7 @@ const Home = () => {
             </div>
             <div>
               <h3 className="font-mono text-xs text-optical mb-5 uppercase tracking-[0.2em]">Fricción Operativa</h3>
-              <p className="text-lab text-sm leading-relaxed font-light">Contratas más gente, pero los resultados no se multiplican. Solo generas más reuniones, burocracia y dependencia.</p>
+              <p className="text-lab text-sm leading-relaxed font-light">Contratas más gente, pero los resultados no se multiplican. Solo generas más reuniones de alineamiento, burocracia y dependencia en el día a día.</p>
             </div>
           </motion.div>
         </motion.div>
@@ -142,9 +142,9 @@ const Home = () => {
           className="flex flex-col gap-px border border-grid bg-grid"
         >
           {[
-            { tag: "MÚSCULO", title: "Eficiencia Extrema", desc: "Automatizamos el trabajo robótico (reportes, flujos, data entry) para devolverle ancho de banda y horas netas a tu equipo." },
-            { tag: "CEREBRO", title: "Autonomía Táctica", desc: "Diseñamos roles milimétricos y asincronía. Reemplazamos la \"reunionitis\" por un equipo que toma decisiones sin tu supervisión." },
-            { tag: "ALMA", title: "Propósito y Cultura", desc: "Instalamos los raíles para una autogestión real. Una organización ágil donde el mejor talento quiere quedarse." }
+            { tag: "MÚSCULO", title: "Eficiencia Extrema", desc: "Automatizamos el trabajo robótico y estandarizamos la infraestructura. Desde integraciones complejas de ERP/CRM y migraciones de datos legacy hasta la inyección de modelos de IA, devolviendo ancho de banda neto a tu equipo." },
+            { tag: "CEREBRO", title: "Autonomía Táctica", desc: "Diseñamos roles milimétricos y asincronía. Reemplazamos la \"reunionitis\" por un sistema donde el equipo toma decisiones y ejecuta de forma autónoma sin tu supervisión constante." },
+            { tag: "ALMA", title: "Propósito y Cultura", desc: "Instalamos los raíles para la autogestión real. Una organización ágil donde el equipo toma ownership de los objetivos y el talento clave quiere quedarse." }
           ].map((layer, idx) => (
             <motion.div key={idx} variants={fadeUp} className="flex flex-col md:flex-row bg-void group hover:bg-optical hover:text-void transition-all duration-500 cursor-default">
               <div className="p-10 md:w-1/3 border-b md:border-b-0 md:border-r border-grid group-hover:border-void/10 flex items-center transition-colors">
@@ -184,7 +184,7 @@ const Home = () => {
           {[
             { num: "01", title: "Audit Clínico", desc: "En 45 minutos mapeamos dónde pierdes liquidez y horas-hombre hoy." },
             { num: "02", title: "Blueprint Táctico", desc: "Diseñamos la arquitectura exacta para destrabar tu operación." },
-            { num: "03", title: "Instalación In-House", desc: "Nuestro laboratorio ejecuta el código y los procesos." },
+            { num: "03", title: "Instalación In-House", desc: "Nuestro hub despliega squads técnicos y de procesos a demanda para ejecutar." },
             { num: "04", title: "Autogestión Real", desc: "Nos retiramos cuando el sistema opera solo. Tu autonomía es el objetivo." }
           ].map((step, i) => (
             <motion.div key={i} variants={fadeUp} className="bg-void p-10 flex flex-col gap-12 relative overflow-hidden group">
@@ -230,16 +230,16 @@ const Home = () => {
               <tr className="border-b border-grid bg-void/50">
                 <th className="p-6 font-mono text-xs uppercase tracking-widest text-lab w-1/4 border-r border-grid">Característica</th>
                 <th className="p-6 font-mono text-xs uppercase tracking-widest text-lab w-1/4 border-r border-grid">Consultoras Tradicionales</th>
-                <th className="p-6 font-mono text-xs uppercase tracking-widest text-lab w-1/4 border-r border-grid">Agencias de IA / Ops</th>
+                <th className="p-6 font-mono text-xs uppercase tracking-widest text-lab w-1/4 border-r border-grid">Software Factories / Dev Shops</th>
                 <th className="p-6 font-mono text-xs uppercase tracking-widest text-optical bg-optical/5 w-1/4">Kintu Labs</th>
               </tr>
             </thead>
             <tbody>
               {[
-                { feature: "Entregable", cons: "Un informe de recomendaciones en PDF", agen: "Un bot o integración suelta (Zapier)", kin: "Un Sistema Operativo funcionando y documentado" },
-                { feature: "Rol asumido", cons: "Te dicen qué hacer y se van", agen: "Ejecutan una herramienta sin contexto", kin: "Somos el Arquitecto: diseñamos y dirigimos la ejecución" },
-                { feature: "Impacto en equipo", cons: "Superficial / Motivacional", agen: "Técnico (Optimiza una tarea aislada)", kin: "Estructural (Transforma cómo opera toda la organización)" },
-                { feature: "Criterio de salida", cons: "Al terminar las horas contratadas", agen: "Al entregar el proyecto tecnológico", kin: "Cuando el equipo opera con autonomía real" }
+                { feature: "Entregable", cons: "Un informe de recomendaciones en PDF", agen: "Un software a medida según un pliego rígido", kin: "Un Sistema Operativo funcionando y adoptado por el equipo" },
+                { feature: "Rol asumido", cons: "Te dicen qué hacer y se van", agen: "Programan a ciegas sin entender el proceso de negocio", kin: "Hub de Evolución: Diseñamos la arquitectura e implementamos llave en mano" },
+                { feature: "Impacto en equipo", cons: "Charlas de liderazgo abstractas", agen: "Nulo. Crean sistemas complejos que los humanos acaban rechazando", kin: "Alta. Co-diseñamos el software junto con la adopción cultural del equipo" },
+                { feature: "Criterio de salida", cons: "Al terminar las horas de consultoría", agen: "Al entregar las líneas de código contratadas", kin: "Cuando el sistema y la empresa operan con autonomía real" }
               ].map((row, i) => (
                 <motion.tr key={i} variants={fadeUp} className="border-b last:border-b-0 border-grid bg-void hover:bg-grid/10 transition-colors">
                   <td className="p-6 text-sm text-optical border-r border-grid font-medium">{row.feature}</td>

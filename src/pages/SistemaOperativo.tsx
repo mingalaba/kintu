@@ -57,7 +57,7 @@ const SistemaOperativo = () => {
               El crecimiento rompe<br/>los sistemas informales.
             </motion.h2>
             <motion.p variants={fadeUp} className="text-lg text-lab font-light leading-relaxed mb-8">
-              Lo que te llevó a tener 10 empleados, rompe la empresa cuando llegas a 40. Si el conocimiento está en cabezas individuales y la coordinación se hace por WhatsApp, no tienes un sistema operativo: tienes un grupo de personas improvisando todos los días.
+              Lo que te sirvió para operar en una etapa inicial, rompe la empresa cuando la escala de transacciones y la complejidad regional aumentan. Si el conocimiento está en cabezas individuales y la integración entre áreas o filiales se hace mediante hojas de cálculo y reportes manuales, no tienes un sistema: tienes un grupo de personas improvisando todos los días para sostener la operación.
             </motion.p>
           </div>
           <div className="md:w-1/2 w-full aspect-square md:aspect-auto md:h-96 bg-grid border border-grid relative flex items-center justify-center group overflow-hidden">
@@ -106,7 +106,7 @@ const SistemaOperativo = () => {
               icon: <Terminal size={32} className="mb-8 text-optical" />,
               title: "Músculo", 
               subtitle: "Infraestructura Táctica",
-              desc: "Automatizamos lo predecible. Extraemos las tareas repetitivas de las manos de tu talento para que puedan hacer el trabajo que realmente importa. Menos clics, cero fricción.",
+              desc: "Automatizamos el trabajo predecible y estandarizamos la tecnología. Desde automatizaciones cotidianas y flujos de trabajo eficientes hasta integraciones de ERP, migraciones críticas y pipelines de datos e IA a medida. Extraemos la carga robótica de las manos del talento para devolverle horas y foco.",
               link: "Explorar Músculo →"
             },
             { 

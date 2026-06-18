@@ -71,7 +71,7 @@ const Servicios = () => {
               icon: <Shield className="text-optical mb-6" size={24}/>,
               level: "Nivel 03 / GROWTH", 
               title: "Partner de Evolución", 
-              desc: "Retainer estratégico. Nos convertimos en tu equipo de Arquitectura Organizacional in-house. Iteramos y escalamos el OS mientras tu empresa crece.",
+              desc: "Para corporaciones con operaciones complejas. Nos convertimos en tu socio de evolución tecnológica y organizativa. Proveemos squads de ingenieros y especialistas a demanda para la ejecución llave en mano de proyectos complejos: modernización de sistemas legacy, integración y unificación de ERPs multiregionales y consolidación de bases de datos, gestionando la adopción humana de inicio a fin.",
               action: "Aplicar para Partnership →"
             },
             { 
