@@ -479,6 +479,22 @@ export default function FutureAudit() {
                   <p className="text-sm text-lab font-light">{questions[currentStep].subtitle}</p>
                 </div>
 
+                {/* Mini-Monitor for Mobile */}
+                {monitorSignals.length > 0 && (
+                  <div className="lg:hidden border border-grid bg-void/50 p-4 flex flex-col gap-2">
+                    <div className="flex items-center justify-between border-b border-grid/30 pb-2">
+                      <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 bg-optical rounded-full animate-ping" />
+                        <span className="font-mono text-[9px] uppercase tracking-widest text-lab">MONITOR_SISTEMA // EN VIVO</span>
+                      </div>
+                      <span className="font-mono text-[9px] text-lab/50">Q{monitorSignals.length}/{questions.length}</span>
+                    </div>
+                    <div className="font-mono text-[11px] text-optical leading-normal">
+                      &gt; {monitorSignals[monitorSignals.length - 1]}
+                    </div>
+                  </div>
+                )}
+
                 {/* Options */}
                 <div className="flex flex-col gap-3">
                   {questions[currentStep].options.map((option, index) => (
@@ -522,7 +538,7 @@ export default function FutureAudit() {
               </div>
 
               {/* RIGHT: Organizational State Monitor */}
-              <div className="lg:col-span-2 hidden lg:block">
+              <div className="lg:col-span-2 w-full lg:block mt-8 lg:mt-0">
                 <OrgMonitor signals={monitorSignals} currentStep={currentStep} />
               </div>
             </motion.div>
@@ -563,6 +579,22 @@ export default function FutureAudit() {
                     recibir tu estimación de ROI personalizada.
                   </p>
                 </div>
+
+                {/* Mini-Monitor for Mobile */}
+                {monitorSignals.length > 0 && (
+                  <div className="lg:hidden border border-grid bg-void/50 p-4 flex flex-col gap-2">
+                    <div className="flex items-center justify-between border-b border-grid/30 pb-2">
+                      <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 bg-optical rounded-full animate-ping" />
+                        <span className="font-mono text-[9px] uppercase tracking-widest text-lab">MONITOR_SISTEMA // EN VIVO</span>
+                      </div>
+                      <span className="font-mono text-[9px] text-lab/50">Q{monitorSignals.length}/{questions.length}</span>
+                    </div>
+                    <div className="font-mono text-[11px] text-optical leading-normal">
+                      &gt; {monitorSignals[monitorSignals.length - 1]}
+                    </div>
+                  </div>
+                )}
 
                 <form onSubmit={handleFormSubmit} className="flex flex-col gap-5">
                   {/* Row 1: Name & Email */}
@@ -708,7 +740,7 @@ export default function FutureAudit() {
               </div>
 
               {/* RIGHT: Monitor — completed */}
-              <div className="lg:col-span-2 hidden lg:block">
+              <div className="lg:col-span-2 w-full lg:block mt-8 lg:mt-0">
                 <OrgMonitor signals={monitorSignals} currentStep={currentStep} />
               </div>
             </motion.div>

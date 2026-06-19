@@ -265,56 +265,6 @@ const Home = () => {
           </table>
         </motion.div>
       </section>
-
-      {/* PRUEBA SOCIAL */}
-      <section className="w-full max-w-7xl mx-auto px-6 py-32 border-x border-b border-grid relative">
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerContainer}
-          className="flex flex-col md:flex-row justify-between items-start mb-20 gap-8"
-        >
-          <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-medium tracking-tight">
-            Empresas que instalaron<br/>el OS Kintu.
-          </motion.h2>
-          <motion.div variants={fadeUp} className="font-mono text-lab text-xs border border-grid p-4 tracking-widest uppercase bg-void/50">
-            [ CASOS_DE_ÉXITO ]
-          </motion.div>
-        </motion.div>
-
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerContainer}
-          className="grid grid-cols-1 md:grid-cols-2 gap-px bg-grid border border-grid"
-        >
-          {/* Testimonial 1 */}
-          <motion.div variants={fadeUp} className="bg-void p-12 flex flex-col gap-10 group hover:bg-grid/10 transition-colors duration-500">
-            <div className="font-mono text-4xl text-grid opacity-50">"</div>
-            <p className="text-xl md:text-2xl leading-relaxed font-light text-optical">
-              En 6 semanas dejé de ser el único que sabía cómo corría la operación comercial. El equipo tomó ownership de verdad y recuperé mis fines de semana.
-            </p>
-            <div className="mt-auto border-t border-grid pt-8">
-              <p className="font-medium text-optical uppercase tracking-wide text-sm">Nicolás M.</p>
-              <p className="text-lab text-sm">CEO & Fundador — Empresa de Logística</p>
-            </div>
-          </motion.div>
-
-          {/* Testimonial 2 */}
-          <motion.div variants={fadeUp} className="bg-void p-12 flex flex-col gap-10 group hover:bg-grid/10 transition-colors duration-500">
-            <div className="font-mono text-4xl text-grid opacity-50">"</div>
-            <p className="text-xl md:text-2xl leading-relaxed font-light text-optical">
-              Contratamos la capa de Músculo y en 30 días automatizamos 40 horas de data entry semanal. Ese margen nos permitió financiar el rediseño del Cerebro sin inversión extra.
-            </p>
-            <div className="mt-auto border-t border-grid pt-8">
-              <p className="font-medium text-optical uppercase tracking-wide text-sm">Sofía L.</p>
-              <p className="text-lab text-sm">Directora de Operaciones — Agencia Digital</p>
-            </div>
-          </motion.div>
-        </motion.div>
-      </section>
     </>
   );
 };
